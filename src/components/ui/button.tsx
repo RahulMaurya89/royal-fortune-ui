@@ -10,6 +10,12 @@ const buttonVariants = cva(
     variants: {
       variant: {
         default: "bg-primary text-primary-foreground shadow hover:bg-primary/90",
+        royal:
+          "border border-primary/80 bg-primary text-primary-foreground shadow-[0_8px_30px_color-mix(in_oklab,var(--primary)_30%,transparent)] hover:bg-gold-bright active:translate-y-px",
+        glass:
+          "border border-border/70 bg-card/70 text-foreground backdrop-blur-md hover:border-primary/60 hover:bg-accent",
+        danger:
+          "border border-destructive/60 bg-destructive/15 text-destructive-foreground hover:bg-destructive/25",
         destructive: "bg-destructive text-destructive-foreground shadow-sm hover:bg-destructive/90",
         outline:
           "border border-input bg-background shadow-sm hover:bg-accent hover:text-accent-foreground",
@@ -22,6 +28,8 @@ const buttonVariants = cva(
         sm: "h-8 rounded-md px-3 text-xs",
         lg: "h-10 rounded-md px-8",
         icon: "h-9 w-9",
+        game: "h-14 px-10 text-base font-bold uppercase tracking-[0.16em]",
+        square: "h-11 w-11 p-0",
       },
     },
     defaultVariants: {
