@@ -85,7 +85,7 @@ function MenuTile({ icon, label, detail, onClick }: { icon: ReactNode; label: st
 }
 
 function ScreenHeading({ title, eyebrow, onBack }: { title: string; eyebrow: string; onBack: () => void }) {
-  return <div className="grid grid-cols-[auto_minmax(0,1fr)_auto] items-center gap-4"><IconButton label="Back" onClick={onBack}><ArrowLeft /></IconButton><div className="min-w-0 text-center"><p className="text-[10px] font-bold uppercase text-primary">{eyebrow}</p><h1 className="truncate font-display text-2xl font-bold sm:text-4xl">{title}</h1></div><span className="size-11" /></div>;
+  return <div className="grid grid-cols-[auto_minmax(0,1fr)_auto] items-center gap-2 sm:gap-4"><IconButton label="Back" onClick={onBack}><ArrowLeft /></IconButton><div className="min-w-0 text-center"><p className="text-[9px] font-bold uppercase text-primary sm:text-[10px]">{eyebrow}</p><h1 className="font-display text-xl font-bold leading-tight sm:text-4xl">{title}</h1></div><span className="size-11" /></div>;
 }
 
 function GameSelection({ level, onNavigate, onPopup }: { level: number; onNavigate: (s: Screen) => void; onPopup: (p: Popup) => void }) {
