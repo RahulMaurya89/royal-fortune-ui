@@ -55,7 +55,7 @@ function TopBar({ coins, xp, onNavigate, onPopup }: { coins: number; xp: number;
       <span className="min-w-0"><span className="block truncate text-sm font-bold">Lord Aurum</span><span className="block text-[10px] uppercase text-muted-foreground">Silver Court</span></span>
     </button>
     <div className="hidden w-72 items-center gap-3 lg:flex"><span className="font-display text-sm text-primary">LV. 03</span><Progress value={xp} label={`${xp * 24} / 2,400 XP`} /></div>
-    <div className="flex items-center justify-end gap-2"><div className="mr-1 hidden rounded-md border border-primary/40 bg-primary/10 px-4 py-2 sm:block"><CoinAmount value={coins} compact /></div><IconButton label="Notifications" onClick={() => onPopup("achievement")}><Bell /></IconButton><IconButton label="Settings" onClick={() => onPopup("settings")}><Settings /></IconButton></div>
+    <div className="flex items-center justify-end gap-2"><div className="mr-1 rounded-md border border-primary/40 bg-primary/10 px-2 py-2 sm:px-4"><CoinAmount value={coins} compact /></div><span className="hidden sm:inline-flex"><IconButton label="Notifications" onClick={() => onPopup("achievement")}><Bell /></IconButton></span><IconButton label="Settings" onClick={() => onPopup("settings")}><Settings /></IconButton></div>
   </header>;
 }
 
